@@ -1,0 +1,21 @@
+{
+    "name": "puredata",
+    "version": "1.0.0",
+    "description": "PureData module",
+    "author": "blokas-community",
+    "launch_mode": "list",
+    "depends_on": {
+        "jack.service": {},
+        "pisound-ctl.service": {},
+        "touchosc2midi.service": {},
+        "amidiauto.service": {
+            "config": "amidiauto/blacklist.json"
+        }
+    },
+    "scripts": {
+        "install": "install.sh",
+        "launch": "launch.sh",
+        "list": "list.sh",
+        "stop": "stop.sh"
+    }
+}

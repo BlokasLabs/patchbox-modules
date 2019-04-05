@@ -1,0 +1,12 @@
+{
+    "name": "PureData",
+    "system": {
+        "jack.service": {},
+        "pisound-ctl.service": {},
+        "amidiauto.service": {},
+        "touchosc2midi.service": {}
+    },
+    "services": {
+        "pisound-btn.service": {}
+    }
+}
