@@ -1,0 +1,25 @@
+{
+    "name": "orac",
+    "version": "1.0.0",
+    "description": "ORAC 2.0",
+    "author": "TheTechnobear",
+    "depends_on": [
+        "jack.service",
+        {
+            "service": "amidiauto.service",
+            "config": "amidiauto.conf"
+        },
+        {
+            "service": "pisound-btn.service",
+            "config": "pisound-btn.conf"
+        },
+        "touchosc2midi.service"
+    ],
+    "services": [
+        "orac.service",
+        "mec.service"
+    ],
+    "scripts": {
+        "install": "install.sh"
+    }
+}
