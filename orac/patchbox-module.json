@@ -16,7 +16,11 @@
         "touchosc2midi.service"
     ],
     "services": [
-        "orac.service"
+        "orac.service",
+        {
+            "service": "mec.service",
+            "on_activate": false
+        }
     ],
     "scripts": {
         "install": "install.sh"
