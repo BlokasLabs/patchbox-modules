@@ -1,6 +1,6 @@
 {
     "name": "orac",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "ORAC 2.0",
     "author": "TheTechnobear",
     "depends_on": [
