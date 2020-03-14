@@ -1,0 +1,27 @@
+{
+	"name": "modep",
+	"version": "1.8.0",
+	"description": "MODEP module",
+	"author": "blokas",
+	"depends_on": [
+		"jack.service",
+		"pisound-ctl.service",
+		"modep-touchosc2midi.service",
+		"modep-mod-ui.service",
+		{
+			"service": "pisound-btn.service",
+			"config": "pisound-btn.conf"
+		}
+	],
+	"services": [
+		"modep-mod-ui.service",
+		{
+			"service": "modep-touchosc2midi.service",
+			"auto_start": true
+		},
+		"modep-mod-host.service"
+	],
+	"scripts": {
+		"install": "install.sh"
+	}
+}
