@@ -19,7 +19,10 @@
 			"service": "modep-touchosc2midi.service",
 			"auto_start": true
 		},
-		"modep-mod-host.service"
+		"modep-mod-host.service",
+		"modep-amidithru.service",
+		"modep-touchosc2midi.service",
+		"modep-mod-midi-merger.service"
 	],
 	"scripts": {
 		"install": "install.sh"
