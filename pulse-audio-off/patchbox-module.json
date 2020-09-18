@@ -1,0 +1,14 @@
+{
+    "name": "pulse-audio-off",
+    "version": "1.0.0",
+    "description": "Keeps the Pulse Audio's Jack Sink and Source disabled",
+    "is_desktop": true,
+    "launch_mode": "auto",
+    "author": "blokas-community",
+    "depends_on": [ "jack.service" ],
+    "scripts": {
+        "launch": "disable_pulse_audio.sh",
+	"stop": "enable_pulse_audio.sh"
+    }
+}
+
