@@ -12,9 +12,9 @@ if [ -z "$PUREDATA_PATCHES_DIR" ]; then
 fi
 
 get_pd_entry() {
-	PATCH_DIR=`dirname $i`
-	echo -n $PATCH_DIR/
-	cat "$i" | grep "entry:" | sed -e 's/entry:[[:space:]]*//g'
+	PATCH_DIR=`dirname "$1"`
+	echo -n "$PATCH_DIR/"
+	cat "$1" | grep "entry:" | sed -e 's/entry:[[:space:]]*//g'
 }
 
 
