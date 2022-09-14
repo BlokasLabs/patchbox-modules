@@ -1,6 +1,6 @@
 {
 	"name": "modep",
-	"version": "1.8.0",
+	"version": "1.12.0",
 	"description": "MODEP module",
 	"author": "blokas",
 	"depends_on": [
