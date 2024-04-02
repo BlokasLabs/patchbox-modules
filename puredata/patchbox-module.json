@@ -8,7 +8,7 @@
         "jack.service",
         "pisound-ctl.service",
         "touchosc2midi.service",
-        "amidiauto.service"
+        "amidiminder.service"
     ],
     "scripts": {
         "install": "install.sh",

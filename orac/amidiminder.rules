@@ -1,0 +1,5 @@
+.hw <---> .app
+MEC MIDI --> Pure Data
+
+MEC MIDI <-x-> *
+Push 2 <-x-> *

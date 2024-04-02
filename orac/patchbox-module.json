@@ -6,8 +6,8 @@
     "depends_on": [
         "jack.service",
         {
-            "service": "amidiauto.service",
-            "config": "amidiauto.conf"
+            "service": "amidiminder.service",
+            "config": "amidiminder.rules"
         },
         {
             "service": "pisound-btn.service",
