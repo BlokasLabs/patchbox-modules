@@ -1,0 +1,13 @@
+{
+    "name": "pimidipy",
+    "version": "1.0.0",
+    "description": "Pimidi module",
+    "author": "blokas-community",
+    "launch_mode": "list",
+    "scripts": {
+        "install": "install.sh",
+        "launch": "launch.sh",
+        "list": "list.sh",
+        "stop": "stop.sh"
+    }
+}

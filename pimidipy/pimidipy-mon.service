@@ -1,0 +1,9 @@
+[Unit]
+Description=Pimidipy monitor for script changes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl restart pimidipy.service
+
+[Install]
+WantedBy=multi-user.target

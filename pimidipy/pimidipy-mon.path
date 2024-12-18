@@ -1,0 +1,8 @@
+[Path]
+PathModified=/var/pimidipy-scripts
+PathModified=/var/pimidipy-scripts/samples
+PathModified=/var/pimidipy-scripts/utils
+PathModified=/etc/pimidipy.conf
+
+[Install]
+WantedBy=multi-user.target

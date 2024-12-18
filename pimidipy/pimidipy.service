@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Copyright (C) 2017-2024 Vilniaus Blokas UAB, https://blokas.io/pimidi/
+# All rights reserved.
+#
+# This software may be modified and distributed under the terms
+# of the BSD license.  See the LICENSE file for details.
+#
+
+[Unit]
+Description=Pimidipy Script Runner
+After=sound.target
+Wants=sound.target
+StartLimitIntervalSec=0
+
+[Service]
+EnvironmentFile=-/etc/pimidipy.conf
+EnvironmentFile=-/etc/environment
+EnvironmentFile=/run/pimidipy.active
+Environment=PYTHONPATH=/var/pimidipy-scripts
+WorkingDirectory=/var/pimidipy-scripts
+ExecStartPre=/usr/bin/python3 -c "print(\"Starting ${PIMIDIPY_SCRIPT}\")"
+ExecStart=/usr/bin/python3 -u $PIMIDIPY_SCRIPT
+KillSignal=SIGINT
+User=pimidipy
+Group=pimidipy
+Restart=always
+RestartSec=2
